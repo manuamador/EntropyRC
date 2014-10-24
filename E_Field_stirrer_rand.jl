@@ -87,7 +87,7 @@ for i=1:M
       Bt[i,f,n,:]=B
     end
   end
-  npzwrite("Estirrer_part.npz", ["Et" => Et,"Bt" => Bt, "freq" => freq, "x" => x, "y" => y, "z" => z])
+  npzwrite("Estirrer_part.npz", ["Et" => Et[i,:,:,:],"Bt" => Bt[i,:,:,:], "freq" => freq, "x" => x, "y" => y, "z" => z])
 end
 #Back up
 npzwrite("Estirrer_MC.npz", ["Et" => Et,"Bt" => Bt, "freq" => freq, "x" => x, "y" => y, "z" => z])
