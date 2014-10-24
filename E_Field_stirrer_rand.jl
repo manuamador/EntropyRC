@@ -70,7 +70,6 @@ for i=1:M
   for f=1:nf
     println("$i/$M, $f/$nf")
     for n=1:na
-      println("$n/$na")
       perc=round(n/na*1000)/10
       r=[x[n],y[n],z[n]]
       E=zeros(Complex128,3)
