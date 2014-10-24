@@ -67,6 +67,3 @@ end
 #Back up
 using NPZ
 npzwrite("Estirrer.npz", ["Et" => Et, "freq" => freq, "x" => x, "y" => y, "z" => z])
-
-
-
