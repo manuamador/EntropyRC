@@ -5,8 +5,8 @@ const c = 299792458.
 const mu0 = 4*pi*1e-7
 const eps0 = 1/(mu0*c^2)
 
-f0=10e6
-f1=5e9
+f0=100e6
+f1=3e9
 nf=50
 freq=10.^(linspace(log10(f0),log10(f1),nf))
 
@@ -47,7 +47,7 @@ POS=POS[U,:]
 
 const numberofimages=length(POS[:,1])
 const M=30
-const na=360
+const na=180
 const phi=linspace(2*pi/na,2*pi,na)
 
 Et=zeros(Complex64,M,nf,na,3)
