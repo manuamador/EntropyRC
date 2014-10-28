@@ -58,7 +58,8 @@ TcmoyP=zeros((M,nf))
 
 
 def maxorder(coeff,crit=0.01):
-    U=find(abs(coeff)<crit)
+    U=find(abs(coeff)<crit*max(abs(coeff)))
+    #U=find(abs(coeff)<crit)
     if len(U)==0:
         a=NaN
     if len(U)==1:
@@ -66,8 +67,6 @@ def maxorder(coeff,crit=0.01):
     if len(U)>1:
         a=U[1]
     return a
-    
-
 
 
 binsize=10
