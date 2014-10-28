@@ -129,7 +129,7 @@ show()
 savefig("TchebSeriesPh.pdf",bbox="tight")
 
 figure(3)
-semilogx(freq,TcP.nanmean(axis=0),label="$P$")
+semilogx(freq,nanmean(TcP,axis=0),label="$P$")
 legend(loc=0)
 grid()
 xlabel('$f$')
