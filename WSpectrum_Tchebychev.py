@@ -143,14 +143,8 @@ TcmoyP=zeros((M,nf))
 
 
 def maxorder(coeff,crit=0.01):
-    U=find(abs(coeff)<crit*max(abs(coeff)))
-    #U=find(abs(coeff)<crit)
-    if len(U)==0:
-        a=NaN
-    if len(U)==1:
-        a=U[0]
-    if len(U)>1:
-        a=U[1]
+    U=find(abs(coeff)>crit*max(abs(coeff)))
+    a=U[-1]
     return a
 
 
