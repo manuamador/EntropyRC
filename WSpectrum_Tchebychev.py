@@ -212,3 +212,10 @@ legend(loc=0)
 grid()
 xlabel('$f$')
 ylabel("Number of dimensions")
+
+
+
+a=corrcoef(Er[0:49,:,50,2][:],Er[50:99,:,50,2][:])
+98**2/sum(abs(a)**2)
+2*pi/(c/freq[50]/4)
+
